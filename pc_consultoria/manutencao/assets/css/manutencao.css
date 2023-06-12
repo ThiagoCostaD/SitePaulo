@@ -1,7 +1,5 @@
 body{
     background-color: white;
-    color: white;
-    
 }
 .corpo{
     font-family: 'Franklin Gothic Medium',
@@ -17,4 +15,7 @@ ul{
 }
 .cabeçalho{
     box-sizing: content-box;
+}
+nav .redes{
+    width: 15px;
 }
