@@ -1,21 +1,98 @@
-body{
-    background-color: white;
-}
-.corpo{
-    font-family: 'Franklin Gothic Medium',
-     'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    color: black;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none
+:root {
+    --color-primary: gold;
+    --color-primary-hover: #2086c2;
+    --color-primary-dark: #13141f;
+    --color-primary-dark-hover: #212336;
+    --color-primary-light: #d4ecfa;
+    --color-primary-light-hover: #bdd8e7;
+  
+    --color-white: #fff;
+    --color-black: #000;
+  
+    --color-dark-text: #444;
+    --color-info-light: #cce5ff;
+    --color-debug-light: #cce5ff;
+    --color-success-light: #d4edda;
+    --color-alert-light: #fff3cd;
+    --color-warning-light: #fff3cd;
+    --color-error-light: #f8d7da;
+  
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+  
+    --color-gray-0: #f9f9f9;
+    --color-gray-1: #e0e0e0;
+    --color-gray-2: #c7c7c7;
+    --color-gray-3: #aeaeae;
+    --color-gray-4: #959595;
+    --color-gray-5: #7d7d7d;
+    --color-gray-6: #646464;
+    --color-gray-7: #4b4b4b;
+    --color-gray-8: #323232;
+    --color-gray-9: #191919;
+  
+    --font-primary: sans-serif;
+    --font-headings: 'Roboto Slab', serif;
+  
+    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-large: 4rem;
+  }
+  
+  body {
+        background:rgb(235, 197, 6);
 }
 .cabeçalho{
-    box-sizing: content-box;
+    margin-left: 450px;
+    height: 250;
 }
-nav .redes{
-    width: 15px;
+.corpo{
+    font-family: var(--font-primary);
+    font-size: 25px;
+    color: darkblue;
+    margin-top: 25px;
+    transition: all 900ms ease-in-out;
+    padding-left: 400px;
+    align-items: center;
+    justify-content: space-between;
 }
+.redes{
+    width: 325px;
+    transform: scale(1);
+    border-radius: 0.6rem;
+    overflow: hidden;
+    margin-left: 450px;
+    padding: var(--spacing-gutter-medium);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa {
+    font-size: 55px;
+    color: darkblue;
+    text-align: center;
+    text-decoration: none;
+    border: 10px;;
+  }
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: darkblue;
+    color: gold;
+    padding: var(--spacing-gutter-large);
+  }
+  
+  .main-footer a {
+    color: var(--color-gray-2);
+    text-decoration: none;
+}
+  
+  .main-footer a:hover {
+    filter: brightness(0.8);
+  }
