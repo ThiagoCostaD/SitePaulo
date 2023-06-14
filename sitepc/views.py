@@ -3,7 +3,11 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('home14')
+    return render(request, 'home.html')
+
+
+def manutencao(request):
+    return render(request, 'manutencao.html')
 
 
 def sobre(request):
