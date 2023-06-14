@@ -1,38 +1,37 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'sitepc/manutencao.html')
 
 
 def manutencao(request):
-    return render(request, 'manutencao.html')
+    return render(request, 'sitepc/manutencao.html')
 
 
 def sobre(request):
-    return HttpResponse('sobre')
+    return render(request, 'sitepc/manutencao.html')
 
 
 def palestras(request):
-    return HttpResponse('palestras')
+    return render(request, 'sitepc/manutencao.html')
 
 
 def cursos(request):
-    return HttpResponse('cursos')
+    return render(request, 'sitepc/manutencao.html')
 
 
 def consultorias(request):
-    return HttpResponse('consultorias')
+    return render(request, 'sitepc/manutencao.html')
 
 
 def sistemas(request):
-    return HttpResponse('sistemas')
+    return render(request, 'sitepc/manutencao.html')
 
 
 def contato(request):
-    return HttpResponse('contato')
+    return render(request, 'sitepc/manutencao.html')
 
 
 def faq(request):
-    return HttpResponse('faq')
+    return render(request, 'sitepc/manutencao.html')

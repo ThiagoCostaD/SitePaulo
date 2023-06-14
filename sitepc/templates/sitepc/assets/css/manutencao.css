@@ -21,7 +21,12 @@
     --spacing-gutter-medium: 3rem;
     --spacing-gutter-large: 4rem;
   }
-  
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background:var(--color-one);
 }
