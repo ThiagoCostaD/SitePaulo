@@ -49,7 +49,7 @@
 
 body {
     background: #e3b316;
-    color: var(--color-dark-text);
+    color: var(--color-white);
 }
 
 h1,
@@ -66,6 +66,9 @@ h1 {
     text-align: center;
     text-decoration-line: underline;
 }
+h1.titulo{
+    font-size: 5rem;
+}
 
 .containe {
     max-width: 1400px;
@@ -74,7 +77,7 @@ h1 {
 }
 
 .main-header-containe {
-    background: #00008b;
+    background:darkblue;
     text-align: center;
 }
 
@@ -129,7 +132,6 @@ h1 {
 }
 
 .aviso {
-    transform: scale(1);
     text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     font-size: 2.5rem;
@@ -138,77 +140,104 @@ h1 {
     width: fit-content;
     margin: 0 auto;
     text-transform: capitalize;
-    transition: all 400ms ease-in-out;
 }
 
-.aviso:hover {
-    transform: scale(1.05);
-    text-shadow: -10px 10px 20px rgba(0, 0, 0, 0.6);
-    color: red;
+.containter-redes{
+    margin: 0rem 3.5rem 0rem  ;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-gutter-small);
 }
 
 .redes {
-    transform: scale(1);
-    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    padding-left: 30rem;
-    align-items: center;
+    font-size: 2rem;
+    filter: saturate(.8);
+    transition: all 400ms ease-in-out; 
+    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.1rem;
 }
 
 .redes:hover {
-    transform: scale(1.06);
-    text-shadow: -10px 10px 20px rgba(0, 0, 0, 0.6);
-}
-
-.fa:hover {
-    opacity: 0.7;
+    transform: scale(1.02);
+    text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 .fa {
-    font-size: 75px;
-    color: var(--color-two);
-    text-align: center;
-    text-decoration: none;
-    border: 11px;
+    font-size: 70px;
+    color: darkblue;
 }
 
+.fa:hover {
+    transition: all 300ms ease-in-out;
+    color: rgb(5, 141, 186);
+}
 .main-content {
     padding-top: 0;
-    margin-top: 0;
-    display: flex;
 }
 
 .main-content-list {
-    display: inline;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    margin-left: 25rem;
+    gap: var(--spacing-gutter-medium);
 }
 
-.geral-corpo {
-    color: rgb(255, 255, 255);
-    background: darkblue;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.4);
-    transform: scale(1);
-    transition: all 300ms ease-in-out;
-    margin-top: 1.5rem;
+.pericias{
+    max-width: 55rem;
+    margin: 0 auto;
+    border-radius: .4rem;
+    position: relative;
+    text-align: center;
+    color: darkblue;
 }
 
-.corpo-lista {
-    margin-left: 250px;
-    padding: var(--spacing-gutter-small);
-}
-
-.geral-corpo img {
+.geral-corpo img{
     max-width: 100%;
 }
-
-.corpo-lista {
-    max-width: 50rem;
+.geral-corpo{
+    margin: 1.0rem;
+    background: rgba(18, 30, 255, 0.854);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 300ms ease-in-out;
+    transform: scale(1);
+    border-radius: .6rem;
+    overflow: hidden;
 }
 
-.corpo-lista:hover {
-    transform: scale(1.06);
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.6);
+.corpo-lista:hover{
+    transform: scale(1.05);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.45);
+
+}
+
+.corpo-lista{
+    max-width: 64rem;
+    height: fit-content;
+}
+
+.corpo-titulo{
+    text-decoration-line: underline;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.corpo-titulo-container{
+    padding: var(--spacing-gutter-medium);
+}
+.corpo-conteudo{
+    padding: var(--spacing-gutter-small);
+    padding-top: 1.5rem;
+    color: var(--color-gray-1);
+    font-size: 1rem;
+}
+
+.recipe-footer a {
+    background: var(--color-white);
+    display: block;
+    color: var(--color-black);
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem var(--spacing-gutter-medium);
+    transition: all 300ms ease-in-out;
 }
 
 .main-footer {
@@ -226,5 +255,5 @@ h1 {
 }
 
 .main-footer a:hover {
-    filter: brightness(0.8);
+    filter: brightness(.8);
 }
