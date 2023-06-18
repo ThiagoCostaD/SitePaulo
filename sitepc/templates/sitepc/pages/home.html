@@ -1,26 +1,11 @@
-{% include 'sitepc/partials/head.html' %}
+{% extends 'global/base.html' %}
 
-<body>
+{% block titulo %}HOME {% endblock titulo %}
 
-    {% include 'sitepc/partials/header.html' %}
-<!--    <br>
-    {% include 'sitepc/partials/search.html' %} -->
-    <br>
-    {% include 'sitepc/partials/aviso.html' %}
-    <br>
-    {% include 'sitepc/partials/redes.html' %}
-    <br>
-    <form class="pericias">
-        <h1 class='titulo'>Pericias:</h1>
-    </form>
+{% block home %}
     <main class="main-content-container">
         <div class="main-content main-content-list container">
-           {% include 'sitepc/partials/corpo_lista.html' %}
+           {% include 'sitepc/partials/corpo-lista.html' %}
         </div>
     </main>
-
-</body>
-<br>
-{% include 'sitepc/partials/rodape.html' %}
-
-</html>
+{% endblock home %}
