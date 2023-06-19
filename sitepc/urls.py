@@ -1,14 +1,7 @@
 from django.urls import path
-from sitepc import views
+from . import views
 
 urlpatterns = [
-
-    path('', views.home, name='home'),  # home
-    path('sobre/', views.sobre, name='sobre',),
-    path('palestras/<slug:id>/', views.palestras, name='palestras',),
-    path('cursos/<id>/', views.cursos, name='cursos',),
-    path('consultorias/<slug:id>/', views.consultorias, name='consultorias',),
-    path('sistemas/<slug:id>/', views.sistemas, name='sistemas',),
-    path('contato/', views.contato, name='contato',),
-    path('faq/<slug:id>/', views.faq, name='FAQ',),
+    path('', views.home, ),  # home
+    path('pericias/<int:id>/', views.pericias),
 ]

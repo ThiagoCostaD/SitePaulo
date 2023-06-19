@@ -1,5 +1,5 @@
 {% load static %}
-{% load django_bootstrap5 %}
+
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,5 +15,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'sitepc/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'sitepc/css/menu.css' %}">
 
+    <script src="js/jquery.js"></script>
+<script>
+    
+    //Menu
+    $(".main-nav ul li:has(ul)").addClass("submenu");
+    $(".main-nav ul li:has(ul)").append("<i></i>");
+    $(".main-nav ul i").click(function() {
+      $(this)
+        .parent("li")
+        .toggleClass("open");
+      $(this)
+        .parent("li")
+        .children("ul")
+        .slideToggle();
+    });
+    //Menu Mobile
+    $(".mob-btn").click(function() {
+      if (!$("html").hasClass("show-menu")) {
+        $("html").addClass("show-menu");
+      } else {
+        $("html").removeClass("show-menu");
+      }
+    });
+    $(".overlay").click(function() {
+      if ($("html").hasClass("show-menu")) {
+        $("html").removeClass("show-menu");
+      }
+    });
+    //Aparecer addClass
+    $(".first ul")
+      .clone()
+      .prependTo(".main-nav")
+      .addClass("desk-hide");
+    $(".last ul")
+      .clone()
+      .appendTo(".main-nav")
+      .addClass("desk-hide");
+</script>
+
+   
     

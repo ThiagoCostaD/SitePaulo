@@ -48,7 +48,7 @@
 }
 
 body {
-    background: #e3b316;
+    background: goldenrod;
     color: var(--color-white);
 }
 
@@ -84,7 +84,6 @@ h1.titulo{
 .logo {
     height: 12rem;
 }
-
 .search-form {
     border: .15rem solid var(--color-black);
     max-width: 64rem;
@@ -197,11 +196,14 @@ h1.titulo{
 .geral-corpo{
     margin: 1.0rem;
     background: rgba(18, 30, 255, 0.854);
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
     transition: all 300ms ease-in-out;
-    transform: scale(1);
     border-radius: .6rem;
     overflow: hidden;
+}
+
+.corpo-lista{
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .corpo-lista:hover{
@@ -220,6 +222,17 @@ h1.titulo{
     font-size: 1.2rem;
     text-align: center;
 }
+
+.main-content-detail .corpo-lista{
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.main-content-detail .corpo-lista:hover{
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .corpo-titulo-container{
     padding: var(--spacing-gutter-medium);
 }
