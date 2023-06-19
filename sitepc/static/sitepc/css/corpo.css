@@ -46,7 +46,7 @@
 .main-content-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: var(--spacing-gutter-large);
+    gap: var(--spacing-gutter-medium);
 }
 
 .geral-corpo img{
@@ -80,7 +80,8 @@
 }
 
 .main-content-detail .corpo-lista{
-    max-width: 70rem;
+    max-width: 64rem !important;
+    height: fit-content;
     margin: 0 auto;
 }
 
@@ -88,9 +89,17 @@
     transform: scale(1);
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+.corpo-cover{
+    max-width: 64rem;
+}
 
 .corpo-titulo-container{
     padding: var(--spacing-gutter-medium);
+    padding-bottom: 2rem;
+}
+.corpo-titulo-container a{
+    text-decoration: none;
+    color: var(--color-white);
 }
 .corpo-conteudo{
     padding: var(--spacing-gutter-small);
