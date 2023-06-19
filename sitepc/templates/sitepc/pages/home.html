@@ -4,12 +4,10 @@
 {% block titulo %}Home {% endblock titulo %}
 
 {% block home %}
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-           {% include 'sitepc/partials/pericias.html' %}
-           {% include 'sitepc/partials/pericias.html' %}
-           {% include 'sitepc/partials/pericias.html' %}
-           {% include 'sitepc/partials/pericias.html' %}
-        </div>
-    </main>
+
+<div class="main-content main-content-list container">
+    {% for pericia in pericias %}
+    {% include 'sitepc/partials/pericias.html' %}
+    {% endfor %}
+</div>
 {% endblock home %}

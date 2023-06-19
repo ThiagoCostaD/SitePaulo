@@ -4,13 +4,9 @@
     <div class="corpo-cover">
         <img src="{% static 'sitepc/img/Pericia-Ambiental.jpg' %}" alt="Ambiental" class="img-corpo">
         <div class="corpo-titulo-container">
-            <h2 class="corpo-titulo">Ambiental</h2><br>
+            <h2 class="corpo-titulo">{{pericia.title}}</h2><br>
             <div class="corpo-conteudo">
-                <p> A perícia ambiental é um instrumento de prova disciplinada pelo Código de Processo Civil em que o
-                    magistrado nomeia uma pessoa de sua confiança e com conhecimento técnico para a análise e
-                    comprovação da veracidade de fatos. Ou seja, é uma comprovação técnica para a elucidação dos
-                    processos ambientais por meio de laudos periciais elaborados em conjunto por profissionais de
-                    diferentes áreas objetivando o caráter multidisciplinar para avaliação de cada espécie de dano.</p>
+                <p>{{ pericia.description}}</p>
             </div>
         </div>
     </div>

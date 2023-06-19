@@ -39,70 +39,62 @@
     --spacing-gutter-medium: 3rem;
     --spacing-gutter-large: 4rem;
 }
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+.main-content {
+    padding-top: 0;
 }
 
-body {
-    background: goldenrod;
-    color: var(--color-white);
+.main-content-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--spacing-gutter-large);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-headings);
+.geral-corpo img{
+    max-width: 100%;
+}
+.geral-corpo{
+    margin: 1.0rem;
+    background: rgba(18, 30, 255, 0.854);
+    transition: all 300ms ease-in-out;
+    border-radius: .6rem;
+    overflow: hidden;
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-    font-size: 2rem;
-    text-align: center;
+.corpo-lista:hover{
+    transform: scale(1.045);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.45);
+
+}
+
+.corpo-lista{
+    max-width: 64rem;
+    height: fit-content;
+}
+
+.corpo-titulo{
     text-decoration-line: underline;
-}
-h1.titulo{
-    font-size: 5rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-.containe {
-    max-width: 1400px;
+.main-content-detail .corpo-lista{
+    max-width: 70rem;
     margin: 0 auto;
+}
+
+.main-content-detail .corpo-lista:hover{
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.corpo-titulo-container{
+    padding: var(--spacing-gutter-medium);
+}
+.corpo-conteudo{
     padding: var(--spacing-gutter-small);
-}
-
-.main-header-containe {
-    background:darkblue;
-    text-align: center;
-}
-
-.logo {
-    height: 12rem;
-}
-
-.aviso {
-    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: var(--font-headings);
-    color: var(--color-two);
-    width: fit-content;
-    margin: 0 auto;
-    text-transform: capitalize;
-}
-
-
-
-.pericias{
-    max-width: 55rem;
-    margin: 0 auto;
-    border-radius: .4rem;
-    position: relative;
-    text-align: center;
-    color: darkblue;
+    padding-top: 1.5rem;
+    color: var(--color-gray-1);
+    font-size: 1rem;
 }
