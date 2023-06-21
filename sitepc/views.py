@@ -11,5 +11,6 @@ def home(request):
 def pericias(request, id):
     return render(request, 'sitepc/pages/pericias-view.html', context={
         'pericia': make_pericia(),
-        'is_datail_page': True
+        'pagina_detalhada': True,
+        'pagina_pericias': True,
     })
