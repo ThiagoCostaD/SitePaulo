@@ -1,0 +1,29 @@
+
+
+.recipe-footer a {
+    background: var(--color-white);
+    display: block;
+    color: var(--color-black);
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem var(--spacing-gutter-medium);
+    transition: all 300ms ease-in-out;
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #00008b;
+    color: var(--color-two);
+    padding: var(--spacing-gutter-small);
+}
+
+.main-footer a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    filter: brightness(.8);
+}
