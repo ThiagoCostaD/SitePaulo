@@ -3,7 +3,7 @@
 <div class="geral-corpo corpo-lista">
     <div class="corpo-cover">
         <a href="{% url 'pericias:pericia' pericia.id %}"></a>
-        <img src="{{pericia.cover.url}}" alt="Ambiental" class="img-corpo" max-width="64rem">
+        <img src="{{pericia.img.url}}" alt="Ambiental" class="img-corpo" max-width="64rem">
         <div class="corpo-titulo-container">
             <h2 class="corpo-titulo">
                 <a href="{% url 'pericias:pericia' pericia.id %}">
@@ -11,14 +11,14 @@
                 </a>
             </h2><br>
             <div class="corpo-conteudo">
-                <p>{{ pericia.descricao}}</p>
+                <p>{{ pericia.descrição}}</p>
             </div>
         </div>
     </div>
 
     {% if is_datail_page is not True %}
     <footer class="recipe-footer">
-        <a class="recipe-read-more button button-dark button-full-width" href="{% url 'pericias:pericia' pericia.id %}"">
+        <a class="recipe-read-more button button-dark button-full-width" href="{% url 'pericias:pericia' pericia.id %}">
                 <i class=" fas fa-eye"></i>
             <span>mais em breve</span>
         </a>

@@ -1,12 +1,17 @@
-
+.main-nav{
+  background: darkblue;
+}
 .menu {
- 
-    background: darkblue;
-    margin-bottom: 0;
-    width: 100%;
-    float: left;
-    margin-top: 0;
-    border-top: 1px goldenrod solid;
+  
+  background: darkblue;
+  margin-bottom: 0;
+  width: 100%;
+  float: left;
+  margin-top: 0;
+  border-top: 1px goldenrod solid;
+}
+.menu:focus {
+  display: block;
 }
 @media only screen and (min-width: 1200px) {
  
@@ -222,7 +227,7 @@
   
   }
   .show-menu .main-nav {
-  
+    display: none;
     right: 0;
   
   }

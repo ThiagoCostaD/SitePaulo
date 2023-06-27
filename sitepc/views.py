@@ -4,7 +4,7 @@ from utils.pericias.fabrica import make_pericia
 
 def home(request):
     return render(request, 'sitepc/pages/home.html', context={
-        'pericias': [make_pericia() for _ in range(12)],
+        'pericias': [make_pericia() for _ in range(6)],
     })
 
 
