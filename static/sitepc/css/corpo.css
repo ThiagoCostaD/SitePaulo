@@ -1,0 +1,109 @@
+:root {
+    --color-one: rgb(235, 197, 6);
+    --color-two: darkblue;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-primary-dark-hover: #212336;
+    --color-primary-light: #d4ecfa;
+    --color-primary-light-hover: #bdd8e7;
+
+    --color-dark-text: #444;
+    --color-info-light: #cce5ff;
+    --color-debug-light: #cce5ff;
+    --color-success-light: #d4edda;
+    --color-alert-light: #fff3cd;
+    --color-warning-light: #fff3cd;
+    --color-error-light: #f8d7da;
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+
+    --color-gray-0: #f9f9f9;
+    --color-gray-1: #e0e0e0;
+    --color-gray-2: #c7c7c7;
+    --color-gray-3: #aeaeae;
+    --color-gray-4: #959595;
+    --color-gray-5: #7d7d7d;
+    --color-gray-6: #646464;
+    --color-gray-7: #4b4b4b;
+    --color-gray-8: #323232;
+    --color-gray-9: #191919;
+
+    --font-primary: sans-serif;
+    --font-headings: 'Roboto Slab', serif;
+
+    --spacing-gutter-small: 1.5rem;
+    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-large: 4rem;
+}
+.main-content {
+    padding-top: 0;
+}
+
+.main-content-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--spacing-gutter-medium);
+}
+
+.geral-corpo img{
+    max-width: 100%;
+}
+.geral-corpo{
+    margin: 1.0rem;
+    background: rgba(18, 30, 255, 0.854);
+    transition: all 300ms ease-in-out;
+    border-radius: .6rem;
+    overflow: hidden;
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.corpo-lista:hover{
+    transform: scale(1.045);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.45);
+
+}
+
+.corpo-lista{
+    max-width: 64rem;
+    height: fit-content;
+}
+
+.corpo-titulo{
+    text-decoration-line: underline;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.main-content-detail .corpo-lista{
+    max-width: 64rem !important;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.main-content-detail .corpo-lista:hover{
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.corpo-cover{
+    max-width: 64rem;
+}
+
+.corpo-titulo-container{
+    padding: var(--spacing-gutter-medium);
+    padding-bottom: 2rem;
+}
+.corpo-titulo-container a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.corpo-conteudo{
+    padding: var(--spacing-gutter-small);
+    padding-top: 1.5rem;
+    color: var(--color-gray-1);
+    font-size: 1rem;
+}
