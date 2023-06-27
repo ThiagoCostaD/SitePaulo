@@ -1,15 +1,18 @@
 from django.shortcuts import render
-from utils.pericias.fabrica import make_pericia
+# from utils.pericias.fabrica import make_pericia
+from .models import Pericia
 
 
 def home(request):
+    pericias = Pericia.objects.all().order_by('id')
     return render(request, 'sitepc/pages/home.html', context={
-        'pericias': [make_pericia() for _ in range(6)],
+        'pericias': pericias,
     })
 
 
 def pericias(request, id):
-    return render(request, 'sitepc/pages/pericias-view.html', context={
-        'pericia': make_pericia(),
+    pericias = Pericia.objects.filter()
+    return render(request, 'sitepc/pages/home.html', context={
+        'pericias': pericias,
         'is_datail_page': True
     })
