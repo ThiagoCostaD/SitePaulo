@@ -6,7 +6,7 @@
 
       <li><a href="{% url 'pericias:home' %}" title="Home">Home</a></li>
 
-      <li><a href="/">Pericias</a>
+      <li><a href="{% url 'pericias:home' %}" title="Perícias">Perícias</a>
 
         <ul>
 
@@ -61,14 +61,14 @@
       </li>
       <li><a href="">Contato</a></li>
       <li><a href="">FAQ</a></li>
-
+      
 
   </nav>
-  <script src="{% static 'js/script.js' %}"></script>
-  <div class="mob-btn">
+  
+  <div class="mob-btn" onclick="toggleMenu()">
     <span></span>
     <span></span>
     <span></span>
   </div>
-  <div class="overlay"></div>
+  
 </div><!-- menu -->

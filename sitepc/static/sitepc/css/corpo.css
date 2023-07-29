@@ -80,7 +80,7 @@
 }
 
 .main-content-detail .corpo-lista{
-    max-width: 64rem !important;
+    max-width: 84rem;
     height: fit-content;
     margin: 0 auto;
 }

@@ -1,12 +1,13 @@
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
 
 
 class Categoria(models.Model):
-    Nome = models.CharField(max_length=77)
+    nome = models.CharField(
+        max_length=50, help_text='Nome da categoria')
 
     def __str__(self):
-        return self.Nome
+        return self.nome
 
 
 class Pericia(models.Model):

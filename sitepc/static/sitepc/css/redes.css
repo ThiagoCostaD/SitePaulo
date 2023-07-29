@@ -1,31 +1,55 @@
+:root {
+  --spacing-gutter-small: 1.5rem;
+  --spacing-gutter-medium: 3rem;
+  --spacing-gutter-large: 4rem;
+}
 
-.redes {
-  font-size: 2rem;
-  filter: saturate(.8);
-  transition: all 400ms ease-in-out; 
+/* Defina a classe para o contêiner geral */
+.containter-redes {
+  display: flex;
+  justify-content: center; /* Centralizar horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
+  height: var(--spacing-gutter-large); /* Defina a altura desejada para a seção */
+}
+
+/* Defina as regras para cada div dentro do contêiner geral */
+.redes-geral {
+  display: flex;
+  gap: 20px; /* Espaçamento horizontal entre as divs */
+  max-width: 100%; /* Limitar a largura máxima das divs */
+  
+}
+
+/* Defina o estilo para os ícones */
+.rede {
+  font-size: 24px; /* Tamanho do ícone */
+  color: darkblue; /* Cor do ícone */
+  transition: transform 0.3s ease; /* Transição para o efeito de escala */
   text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
-  padding: 1.1rem;
 }
 
-.redes:hover {
-  transform: scale(1.02);
-  text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.4);
+/* Adicione a regra :hover para aplicar o efeito de escala */
+.rede:hover {
+  transform: scale(1.2); /* Efeito de escala (crescimento) */
 }
 
+/* Opcional: Se você deseja que os ícones sejam clicáveis e tenham um efeito de destaque ao passar o mouse */
+.rede a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Adicione estilo aos ícones utilizando a biblioteca Font Awesome */
 .fa {
   font-size: 70px;
   color: darkblue;
-}
-
-.fa:hover {
   transition: all 300ms ease-in-out;
-  color: rgb(5, 141, 186);
 }
 
-.containter-redes{
-  margin: 0rem 3.5rem 0rem  ;
-  padding-top: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--spacing-gutter-small);
+/* Efeito de cor ao passar o mouse sobre os ícones */
+.fa:hover {
+  color: rgb(5, 141, 186);
 }
