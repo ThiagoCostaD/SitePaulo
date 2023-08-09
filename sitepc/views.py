@@ -22,7 +22,7 @@ def home(request):
     page_obj, pagination_range = make_pagination(
         request, pericias, PER_PAGE)
 
-    return render(request, 'pericias/pages/home.html', context={
+    return render(request, 'sitepc/pages/home.html', context={
         'pericias': page_obj,
         'pagination_range': pagination_range,
     })
@@ -57,7 +57,7 @@ def pericias(request, id):
         logger.error('pericia not found with id %s', id)
         raise
 
-    return render(request, 'pericias/pages/pericia-view.html',
+    return render(request, 'sitepc/pages/pericias-view.html',
                   context={
                       'pericia': pericia,
                       'pagina_detalhada': True,
@@ -85,7 +85,7 @@ def busca(request):
     page_obj, pagination_range = make_pagination(
         request, pericias, PER_PAGE)
 
-    return render(request, 'pericias/pages/busca.html',
+    return render(request, 'sitepc/pages/busca.html',
                   {
                       'titulo_pagina': f'Pesquisando por "{termo_busca}"  ',
                       'termo_busca': termo_busca,

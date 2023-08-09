@@ -6,7 +6,8 @@ app_name = 'pericias'
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('pericias/categoria/<int:categoria_id>/',
+    path('sitepc/', views.busca, name='busca'),
+    path('sitepc/categoria/<int:categoria_id>/',
          views.categoria, name='categoria'),
-    path('pericias/<int:id>/', views.pericias, name='pericia'),
+    path('sitepc/<int:id>/', views.pericias, name='pericia'),
 ]
