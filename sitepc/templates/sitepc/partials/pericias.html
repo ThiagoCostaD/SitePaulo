@@ -25,13 +25,13 @@
         <p>{{ pericia.descrição}}</p>
     </div>
 
-    {% if pagina_detalhe is not True %}
-    <footer class="recipe-footer">
-        <a class="recipe-read-more button button-dark button-full-width" href="{% url 'pericias:pericia' pericia.id %}">
-            <i class=" fas fa-eye"></i>
-            <span>mais em breve</span>
-        </a>
-    </footer>
+    {% if pagina_detalhada is not True %}
+        <footer class="recipe-footer">
+            <a class="recipe-read-more button button-dark button-full-width" href="{% url 'pericias:pericia' pericia.id %}">
+                <i class=" fas fa-eye"></i>
+                <span>mais em breve</span>
+            </a>
+        </footer>
     {% endif %}
 
 </div>
